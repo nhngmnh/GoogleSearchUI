@@ -48,7 +48,7 @@ body {
 }
 .footer{
     position: fixed;
-    height: 100px;
+    height: 120px;
     background-color: rgb(227, 220, 220);
     bottom: 0px;
     width: 100%;
@@ -80,11 +80,15 @@ hr{
 }
 .anhtimkiem{
     cursor: pointer;
-    padding-right: 5px;
+    padding-right:5px;
     width: 20px;
     height: 20px;
     margin-bottom: -6px;
-    margin-left:5px;
+    margin-right:5px;
+}
+#thanhtk{
+    padding-right:0px !important;
+    padding-left: 10px !important;
 }
 button{
     height: 30px;
@@ -128,4 +132,25 @@ button:hover{
     border-radius: 25%;
     background-color: rgb(206, 202, 202);
     cursor: pointer;
+}
+@media (max-width: 500px) {
+    body {
+        font-size: 10px;
+    }
+    body #searchInput{
+        width: 100px !important;
+    }
+    body #thanhtk{
+        width: 250px !important;
+    }
+    body .spanfooter{
+        font-size: 10px;
+        bottom: -50px;
+    }
+    .anhtimkiem{
+        right:-80px;
+    }
+    body #searchInput{
+        width: 300px;
+    }
 }
