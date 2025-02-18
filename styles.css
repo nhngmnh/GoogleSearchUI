@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    
+}
+.navbar {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    top:0px;
+    right:5%;
+    font-size: 14px;
+}
+.itemInNavbar:hover{
+    background-color: rgb(212, 208, 208);
+    border:0;
+}
+.itemInNavbar{
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    cursor: pointer;
+}
+.itemInNavbar:hover{
+    text-decoration: underline;
+}
+.images{
+    height: 25px;
+    width: 28px;
+}
+.boundimages{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.mainPart {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    /* Dịch ngược lại 50% kích thước */
+}
+.footer{
+    position: fixed;
+    height: 100px;
+    background-color: rgb(227, 220, 220);
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+}
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+hr{
+    position: absolute;
+    top:50%;
+    border-top: 1px solid gray;
+    width: 100%
+}
+.spanfooter{
+    position: relative;
+    margin-left: 30px;
+    margin-right:30px;
+    cursor: pointer;
+    bottom:-50px;
+}
+.pfooter{
+    
+    position: absolute;
+    top:-5px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.anhtimkiem{
+    cursor: pointer;
+    padding-right: 5px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -6px;
+    margin-left:5px;
+}
+button{
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid;
+}
+button:hover{
+
+    background-color: rgb(212, 208, 208);
+}
+
+.ungdung {
+    margin-top: 10px;
+    position: absolute;
+    display: inline-flex;
+    margin-left: 0px;
+}
+.ungdung img {
+    margin-bottom: 15px;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    height:50px;
+    width: 50px;
+    display: none;
+}
+.ungdung {
+    border: 1px solid;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 9999; /* Lớn hơn tất cả */
+    background-color: rgb(223, 223, 223);
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.ungdung img:hover{
+    border-radius: 25%;
+    background-color: rgb(206, 202, 202);
+    cursor: pointer;
+}
